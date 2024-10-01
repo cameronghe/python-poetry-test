@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "poetry-invalid-config"
+version = "0.1.0"
+description = "A sample project to demonstrate invalid Poetry configuration."
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.source]
+name = "my-repo"
+url = "https://example.com/simple"
+# Invalid property
+priority = "high"  # This line is invalid
+
+[[tool.poetry.source]]
+name = "another-repo"
+url = "https://another-example.com/simple"
+# Another invalid property
+priority = "low"  # This line is also invalid
