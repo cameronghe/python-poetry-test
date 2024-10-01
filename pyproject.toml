@@ -8,10 +8,10 @@ authors = ["Your Name <you@example.com>"]
 name = "my-repo"
 url = "https://example.com/simple"
 # Invalid property
-priority = "high"  # This line is invalid
+priorityx = "high"  # This line is invalid
 
 [[tool.poetry.source]]
 name = "another-repo"
 url = "https://another-example.com/simple"
 # Another invalid property
-priority = "low"  # This line is also invalid
+priorityx = "low"  # This line is also invalid
