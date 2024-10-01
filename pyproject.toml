@@ -4,14 +4,12 @@ version = "0.1.0"
 description = "A sample project to demonstrate invalid Poetry configuration."
 authors = ["Your Name <you@example.com>"]
 
-[tool.poetry.source]
+[[tool.poetry.source]]
 name = "my-repo"
 url = "https://example.com/simple"
-# Invalid property
-priorityx = "high"  # This line is invalid
+priorityx = "high"  # This will cause an error when parsing
 
 [[tool.poetry.source]]
 name = "another-repo"
 url = "https://another-example.com/simple"
-# Another invalid property
 priorityx = "low"  # This line is also invalid
